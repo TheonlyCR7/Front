@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <title>Window对象</title>
+
+</head>
+<body>
+    <input id="openBn" type="button" value="打开窗口">
+
+    <script type="text/javascript">
+        function disp_prompt()
+        {
+            var name=prompt("Please enter your name","")
+            if (name!=null && name!=="")
+            {
+                document.write("Hello " + name + "!")
+            }
+        }
+        // 打开新窗口
+        var openBtn = document.getElementById("openBtn");
+        openBtn.onclick = function(){
+            // 打开窗口
+            open();
+        }
+        open();
+    </script>
+
+</body>
+</html>
